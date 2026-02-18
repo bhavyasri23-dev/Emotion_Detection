@@ -19,8 +19,7 @@ from nltk.tokenize import word_tokenize
 # Fix asyncio loop issues in Streamlit
 nest_asyncio.apply()
 
-nltk.download('punkt')
-nltk.download('stopwords')
+
 stop_words = set(stopwords.words('english'))
 
 # Preprocessing function
@@ -101,5 +100,6 @@ fig, ax = plt.subplots(figsize=(8, 4))
 sns.countplot(x='sentiment', data=df, palette='viridis', ax=ax)
 plt.xticks(rotation=45)
 st.pyplot(fig)
+
 
 
