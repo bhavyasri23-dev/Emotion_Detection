@@ -1,12 +1,11 @@
-streamlit==1.32.0
-nltk==3.8.1
-matplotlib==3.7.1
+streamlit==1.31.0
+pandas
+numpy
+matplotlib
 scikit-learn
-pandas==1.5.3
-numpy==1.23.5
-jobib
-altair==5.2.0
-plotly==5.18.0
+plotly
+seaborn
+altair
+nltk
+nest_asyncio
 
-seaborn==0.12.2
-nest_asynchio==1.6.0
