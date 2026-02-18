@@ -32,7 +32,7 @@ def preprocess(text):
 # Load and preprocess data
 @st.cache_data
 def load_and_train():
-    df = pd.read_csv('tweet_emotions.csv.zip')
+    df = pd.read_csv('tweet_emotions.csv')
     df['clean_text'] = df['content'].apply(preprocess)
     
     vectorizer = TfidfVectorizer()
@@ -101,4 +101,5 @@ fig, ax = plt.subplots(figsize=(8, 4))
 sns.countplot(x='sentiment', data=df, palette='viridis', ax=ax)
 plt.xticks(rotation=45)
 st.pyplot(fig)
+
 
