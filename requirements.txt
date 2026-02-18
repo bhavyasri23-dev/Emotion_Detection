@@ -4,9 +4,9 @@ matplotlib
 scikit-learn
 pandas
 numpy
-tensorflow
+tensorflow==2.15.0
 altair
 plotly
-datetime
+
 seaborn
 nest_asynchio
