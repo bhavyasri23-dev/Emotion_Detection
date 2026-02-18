@@ -8,3 +8,4 @@ tensorflow
 altair
 plotly
 datetime
+seaborn
